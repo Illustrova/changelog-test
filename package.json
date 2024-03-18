@@ -1,6 +1,6 @@
 {
   "name": "changelog-test",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Test repository for different types of changelog generator packages",
   "private": true,
   "license": "MIT",
@@ -12,8 +12,9 @@
     "./packages/*",
     "main"
   ],
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Irina Illustrova"
+  "author": "Irina Illustrova",
+  "devDependencies": {
+    "@release-it/conventional-changelog": "^8.0.1",
+    "release-it": "^17.1.1"
+  }
 }
