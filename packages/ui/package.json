@@ -12,7 +12,15 @@
     "release": "release-it"
   },
   "release-it": {
-    "git": false
+    "git": false,
+    "plugins": {
+      "@release-it/conventional-changelog": {
+        "preset": {
+          "name": "angular"
+        },
+        "infile": "CHANGELOG.md"
+      }
+    }
   },
   "license": "ISC",
   "dependencies": {
@@ -21,5 +29,6 @@
   "peerDependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
-  }
+  },
+  "version": "0.2.0"
 }

@@ -15,10 +15,5 @@
   "scripts": {
     "release": "npm run release --workspaces && release-it"
   },
-  "release-it": {
-    "git": {
-      "requireCleanWorkingDir": false
-    }
-  },
   "author": "Irina Illustrova"
 }
