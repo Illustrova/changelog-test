@@ -1,6 +1,6 @@
 {
   "name": "changelog-test",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Test repository for different types of changelog generator packages",
   "private": true,
   "license": "MIT",
@@ -13,7 +13,7 @@
     "main"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "release": "npm run release --workspaces && release-it"
   },
   "author": "Irina Illustrova"
 }
