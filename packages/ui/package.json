@@ -9,10 +9,17 @@
   ],
   "scripts": {
     "postpublish": "git push --follow-tags",
-    "release": "npx release-it"
+    "release": "release-it"
   },
   "release-it": {
-    "git": false,
+    
+    "git": {
+      "tagName": "v${version}",
+      "commitMessage": "chore(release): ${version}",
+      "requireCleanWorkingDir": false,
+      "requireUpstream": false
+    },
+    
     "plugins": {
       "@release-it/conventional-changelog": {
         "preset": {
