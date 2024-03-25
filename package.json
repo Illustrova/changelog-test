@@ -12,8 +12,9 @@
     "./packages/*",
     "main"
   ],
-  "scripts": {
-    "release": "npm run release --workspaces && release-it"
-  },
-  "author": "Irina Illustrova"
+  "author": "Irina Illustrova",
+  "devDependencies": {
+    "@release-it/conventional-changelog": "^8.0.1",
+    "release-it": "^17.1.1"
+  }
 }
