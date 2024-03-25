@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "postpublish": "git push --follow-tags",
-    "release": "release-it"
+    "release": "npx release-it"
   },
   "release-it": {
     "git": false,
