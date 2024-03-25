@@ -12,14 +12,12 @@
     "release": "release-it"
   },
   "release-it": {
-    
     "git": {
       "tagName": "v${version}",
       "commitMessage": "chore(release): ${version}",
       "requireCleanWorkingDir": false,
       "requireUpstream": false
     },
-    
     "plugins": {
       "@release-it/conventional-changelog": {
         "preset": {
@@ -37,5 +35,5 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
-  "version": "0.2.0"
+  "version": "0.2.1"
 }
