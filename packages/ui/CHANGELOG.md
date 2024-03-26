@@ -1,3 +1,15 @@
+# Changelog
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [0.7.45](https://github.com/Illustrova/changelog-test/compare/v0.7.44...v0.7.45) (2024-03-26)
+
+
+### Bug Fixes
+
+* **button:** change color to blue ([0063f22](https://github.com/Illustrova/changelog-test/commit/0063f22b1b98f45d025b775476538f2fb3a13520))
+
 ### [0.7.39](https://github.com/some-url/ui/compare/v0.7.38...v0.7.39) (2020-11-19)
 
 ### Changes
