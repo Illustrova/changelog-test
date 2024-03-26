@@ -6,5 +6,5 @@ type ButtonProps = {
 };
 
 export const Input = (props: ButtonProps) => {
-  return <input {...props} />;
+  return <input type="text" {...props} />;
 };
