@@ -18,10 +18,6 @@
       "requireCleanWorkingDir": false,
       "requireUpstream": false,
       "requireCommits": true
-    },
-
-    "hooks": {
-      "before:bump": "if ! npx should-semantic-release ; then exit 1 ; fi"
     }
   },
   "license": "ISC",
@@ -32,5 +28,5 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
-  "version": "0.2.4"
+  "version": "0.2.5"
 }
