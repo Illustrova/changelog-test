@@ -19,13 +19,9 @@
       "requireUpstream": false,
       "requireCommits": true
     },
-    "plugins": {
-      "@release-it/conventional-changelog": {
-        "preset": {
-          "name": "angular"
-        },
-        "infile": "CHANGELOG.md"
-      }
+
+    "hooks": {
+      "before:bump": "if ! npx should-semantic-release ; then exit 1 ; fi"
     }
   },
   "license": "ISC",
