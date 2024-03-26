@@ -13,8 +13,9 @@
     "main"
   ],
   "author": "Irina Illustrova",
-  "devDependencies": {
-    "@release-it/conventional-changelog": "^8.0.1",
-    "release-it": "^17.1.1"
+  "release": {
+    "branches": [
+      "semantic-release"
+    ]
   }
 }
