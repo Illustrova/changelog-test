@@ -28,7 +28,7 @@
       "@semantic-release/release-notes-generator",
       ["@semantic-release/changelog",
       {
-        "changelogFile": "packages/ui/CHANGELOG.md"
+        "changelogFile": "CHANGELOG2.md"
       }]
     ]
   }
