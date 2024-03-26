@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.1](https://github.com/Illustrova/changelog-test/compare/v0.9.0...v0.9.1) (2024-03-26)
+
+
+### Bug Fixes
+
+* **input:** add input type ([de99180](https://github.com/Illustrova/changelog-test/commit/de9918028ef928f7d331dde8d734957bf6986442))
+
 # [0.9.0](https://github.com/Illustrova/changelog-test/compare/v0.8.0...v0.9.0) (2024-03-26)
 
 
