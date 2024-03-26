@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.9.0](https://github.com/Illustrova/changelog-test/compare/v0.8.0...v0.9.0) (2024-03-26)
+
+
+### Features
+
+* add readme to main(this commit should not trigger release ([102f600](https://github.com/Illustrova/changelog-test/commit/102f60014f0c37b9a37ff6c0f920dfd8cd050c8d))
+
 # [0.8.0](https://github.com/Illustrova/changelog-test/compare/v0.7.45...v0.8.0) (2024-03-26)
 
 
