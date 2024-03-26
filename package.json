@@ -1,6 +1,6 @@
 {
   "name": "changelog-test",
-  "version": "1.0.2",
+  "version": "0.0.0-development",
   "description": "Test repository for different types of changelog generator packages",
   "private": true,
   "license": "MIT",
@@ -13,9 +13,11 @@
     "main"
   ],
   "author": "Irina Illustrova",
-  "release": {
-    "branches": [
-      "semantic-release"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Illustrova/changelog-test.git"
+  },
+  "devDependencies": {
+    "semantic-release": "^23.0.6"
   }
 }
