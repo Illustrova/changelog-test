@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.8.0](https://github.com/Illustrova/changelog-test/compare/v0.7.45...v0.8.0) (2024-03-26)
+
+
+### Features
+
+* **input:** add input component ([7063b22](https://github.com/Illustrova/changelog-test/commit/7063b2275ed3b7a457f9b74242d4551a2e7f0cc2))
+
 ## [0.7.45](https://github.com/Illustrova/changelog-test/compare/v0.7.44...v0.7.45) (2024-03-26)
 
 
