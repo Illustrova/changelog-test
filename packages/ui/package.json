@@ -16,7 +16,8 @@
       "tagName": "v${version}",
       "commitMessage": "chore(release): ${version}",
       "requireCleanWorkingDir": false,
-      "requireUpstream": false
+      "requireUpstream": false,
+      "requireCommits": true
     },
     "plugins": {
       "@release-it/conventional-changelog": {
@@ -35,5 +36,5 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
-  "version": "0.2.3"
+  "version": "0.2.4"
 }

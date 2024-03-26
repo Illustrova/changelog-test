@@ -1,5 +1,7 @@
 
 
+## [0.2.4](https://github.com/Illustrova/changelog-test/compare/v0.2.1...v0.2.4) (2024-03-26)
+
 ## [0.2.3](https://github.com/Illustrova/changelog-test/compare/v0.2.1...v0.2.3) (2024-03-26)
 
 ### [0.7.39](https://github.com/some-url/ui/compare/v0.7.38...v0.7.39) (2020-11-19)
