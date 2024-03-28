@@ -25,7 +25,7 @@ jobs:
           # for more options
           release-type: node
           config-file: release-please-config.json
-      - run: echo ${{ steps.release.outputs }}
+      - run: echo '${{ toJSON(steps.release.outputs) }}'
       - uses: reitermarkus/automerge@v2
         if: "${{ steps.release.outputs.pr }}"
         with:
