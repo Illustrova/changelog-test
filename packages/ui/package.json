@@ -8,7 +8,7 @@
     "src"
   ],
   "scripts": {
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release-plus"
   },
   "license": "ISC",
   "dependencies": {
@@ -23,6 +23,7 @@
     "branches": [
       "semantic-release"
     ],
+    "commitPaths": ["packages/ui"],
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
