@@ -26,6 +26,8 @@ jobs:
           release-type: node
           config-file: release-please-config.json
       - run: echo '${{ toJSON(steps.release.outputs) }}'
+      - run: echo '${{ github.repository }}'
+      - run: echo '${{ steps.release.outputs.pr.number }}'
       
       - name: Enable Pull Request auto merge
         if: steps.release.outputs.releases_created == 'true'
@@ -35,5 +37,5 @@ jobs:
           TITLE: '[UI] Automatic Release with release-please'
         shell: bash
         run:
-          gh pr merge -R ${{ github.repository }} --merge --auto ${{ env.pr_number }} -b "" -t '⇄ PR-#${{ env.pr_number }} | ${{ env.TITLE }}'
+          gh pr merge -R ${{ github.repository }} --merge --auto ${{ steps.release.outputs.pr.number }} -b "" -t '⇄ PR-#${{ steps.release.outputs.pr.number }} | ${{ env.TITLE }}'
      
