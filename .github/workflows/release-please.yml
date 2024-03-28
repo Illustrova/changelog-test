@@ -25,12 +25,12 @@ jobs:
           # for more options
           release-type: node
           config-file: release-please-config.json
-      - name: Enable Pull Request auto merge
+      - uses: reitermarkus/automerge@v2
         if: "${{ steps.release.outputs.pr }}"
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          pr_number: ${{ steps.release.outputs.pr.number }}
-          TITLE: '[UI] Automatic Release with release-please'
-        shell: bash
-        run:
-          gh pr merge -R ${{ github.repository }} --merge --auto ${{ env.pr_number }} -b "" -t '⇄ PR-#${{ env.pr_number }} | ${{ env.TITLE }}'
+        with:
+          token: ${{ secrets.MY_RELEASE_PLEASE_TOKEN }}
+          # merge-method: rebase
+          # do-not-merge-labels: never-merge
+          # required-labels: automerge
+          pull-request: ${{ steps.release.outputs.pr.number }}
+          # dry-run: true
