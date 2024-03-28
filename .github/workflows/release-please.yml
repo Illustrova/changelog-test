@@ -28,7 +28,7 @@ jobs:
       - run: echo '${{ toJSON(steps.release.outputs) }}'
       
       - name: Enable Pull Request auto merge
-        if: steps.release.outputs.releases_created
+        if: ${{ steps.release.outputs.releases_created }}
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           pr_number: ${{ steps.release.outputs.pr.number }}
