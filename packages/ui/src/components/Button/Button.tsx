@@ -10,7 +10,7 @@ export const Button = (props: ButtonProps) => {
   const { children, ...rest } = props;
   return (
     <button
-      style={{ color: props.variant === "primary" ? "lightblue" : "inherit" }}
+      style={{ color: props.variant === "primary" ? "blue" : "inherit" }}
       {...rest}
     >
       {children}
