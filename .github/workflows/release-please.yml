@@ -26,7 +26,7 @@ jobs:
           release-type: node
           config-file: release-please-config.json
       - name: Enable Pull Request auto merge
-        if: steps.release.outputs.pr
+        if: "${{ steps.release.outputs.pr }}"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           pr_number: ${{ steps.release.outputs.pr.number }}
