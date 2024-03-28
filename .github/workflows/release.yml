@@ -21,7 +21,8 @@ jobs:
       release-tag: ${{ steps.release.outputs.tag }}
 
     env:
-      CHANGELOG_FILE: ${{ github.workspace }}/docs/CHANGELOG.md  
+      CHANGELOG_FILE: ${{ github.workspace }}/packages/ui/CHANGELOG.md  
+      CHANGELOG_BRANCH_NAME: changelog/${{ steps.release.outputs.tag }}
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -44,7 +45,6 @@ jobs:
       # - name: Create a PR for creating/updating the CHANGELOG file
       #   env:
       #     GITHUB_TOKEN:  ${{ secrets.GITHUB_TOKEN }}
-      #     CHANGELOG_BRANCH_NAME: changelog/${{ steps.release.outputs.tag }}
       #   run: |
       #     git switch --create "${CHANGELOG_BRANCH_NAME}"
       #     git commit --message='docs(changelog): release ${{ steps.release.outputs.tag }}' "${CHANGELOG_FILE}"
