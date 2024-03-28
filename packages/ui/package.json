@@ -18,7 +18,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
-  "version": "0.8.0",
+  "version": "0.8.1",
   "release": {
     "branches": [
       "semantic-release"
