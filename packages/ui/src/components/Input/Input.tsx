@@ -1,10 +1,9 @@
 import React from "react";
 
-type ButtonProps = {
-  label: string;
-  value: string;
+type InputProps = {
+  type?: string;
 };
 
-export const Input = (props: ButtonProps) => {
-  return <input type="text" {...props} />;
+export const Input = ({ type, ...props }: InputProps) => {
+  return <input type={type} {...props} />;
 };
