@@ -22,7 +22,6 @@ jobs:
 
     env:
       CHANGELOG_FILE: ${{ github.workspace }}/packages/ui/CHANGELOG.md  
-      CHANGELOG_BRANCH_NAME: changelog/${{ steps.release.outputs.tag }}
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -63,7 +62,7 @@ jobs:
           commit-message: 'chore(manyui): release ${{ steps.release.outputs.tag }}'
           author: 'github-actions <41898282+github-actions[bot]@users.noreply.github.com>'
           labels: automation
-          branch: "${CHANGELOG_BRANCH_NAME}"
+          branch: changelog/${{ steps.release.outputs.tag }}
           base: dev
           body: |
             Latest release: ${{ steps.release.outputs.tag }} and changelog update
