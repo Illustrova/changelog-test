@@ -14,6 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: google-github-actions/release-please-action@v4
+        id: release
         with:
           path: "packages/ui"
           # this assumes that you have created a personal access token
@@ -24,3 +25,12 @@ jobs:
           # for more options
           release-type: node
           config-file: release-please-config.json
+      - name: Enable Pull Request auto merge
+        if: steps.release.outputs.prs_created
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          pr_number: ${{ steps.release.outputs.pr }}
+          TITLE: '[UI] Automatic Release with release-please'
+        shell: bash
+        run:
+          gh pr merge -R ${{ github.repository }} --merge --auto ${{ env.pr_number }} -b "" -t '⇄ PR-#${{ env.pr_number }} | ${{ env.TITLE }}'
