@@ -23,7 +23,7 @@
     "branches": [
       "semantic-release"
     ],
-    "commitPaths": ["packages/ui"],
+    "commitPaths": ["."],
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
