@@ -25,6 +25,7 @@ jobs:
           # for more options
           release-type: node
           config-file: release-please-config.json
+          target-branch: release-please
       - run: echo '${{ toJSON(steps.release.outputs) }}'
       - run: echo '${{ github.repository }}'
       - run: echo "${{ steps.release.outputs.pr.number }}"
