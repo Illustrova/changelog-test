@@ -28,7 +28,8 @@ jobs:
           target-branch: release-please
       - run: echo '${{ toJSON(steps.release.outputs) }}'
       - run: echo '${{ github.repository }}'
-      - run: echo "${{ steps.release.outputs.pr.number }}"
+      - run: echo '"${{ steps.release.outputs.pr.number }}"'
+      - run: echo "'${{ steps.release.outputs.pr.number }}'"
       
       - name: Enable Pull Request auto merge
         if: steps.release.outputs.prs_created == 'true'
