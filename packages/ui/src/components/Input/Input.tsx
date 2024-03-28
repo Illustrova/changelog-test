@@ -1,9 +1,9 @@
 import React from "react";
 
 type InputProps = {
-  type?: "text" | "password" | "email" | "number" | "tel" | "url" | "search";
+  type?: string;
 };
 
-export const Input = ({ type="text", ...props }: InputProps) => {
+export const Input = ({ type, ...props }: InputProps) => {
   return <input type={type} {...props} />;
 };
