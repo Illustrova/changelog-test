@@ -8,12 +8,11 @@
     "node": "^20",
     "npm": "^9"
   },
-    "husky": {
-      "hooks": {
-        "prepare-commit-msg": "echo $HUSKY_GIT_PARAMS",
-                "commit-msg": "node script.js || commitlint -E HUSKY_GIT_PARAMS"
-      }
-    },
+  "husky": {
+    "hooks": {
+      "commit-msg": "node scripts/check-commits.js || commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
   "workspaces": [
     "./packages/*",
     "main"
