@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.8.0](https://github.com/Illustrova/changelog-test/compare/v0.7.45...v0.8.0) (2024-03-28)
+
+
+### Bug Fixes
+
+* **input:** add input type ([de99180](https://github.com/Illustrova/changelog-test/commit/de9918028ef928f7d331dde8d734957bf6986442))
+* **input:** allow only certain types of input ([f890ee3](https://github.com/Illustrova/changelog-test/commit/f890ee34929f546f52826a5cdaae27d7583be851))
+* **input:** disallow email and password types ([2802e0d](https://github.com/Illustrova/changelog-test/commit/2802e0d3f670f02b2b7cb6f1839a4921f2a01fcd))
+
+
+### Features
+
+* add readme to main(this commit should not trigger release ([102f600](https://github.com/Illustrova/changelog-test/commit/102f60014f0c37b9a37ff6c0f920dfd8cd050c8d))
+* **input:** add input component ([7063b22](https://github.com/Illustrova/changelog-test/commit/7063b2275ed3b7a457f9b74242d4551a2e7f0cc2))
+* **input:** add input type prop ([82995e4](https://github.com/Illustrova/changelog-test/commit/82995e4da7c63a8f1422d7c93f3896da637b69ba))
+
 ## [0.9.1](https://github.com/Illustrova/changelog-test/compare/v0.9.0...v0.9.1) (2024-03-26)
 
 
