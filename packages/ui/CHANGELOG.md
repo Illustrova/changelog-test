@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.3](https://github.com/Illustrova/changelog-test/compare/v0.8.2...v0.8.3) (2024-03-28)
+
+
+### Bug Fixes
+
+* env vluee ([6f208ba](https://github.com/Illustrova/changelog-test/commit/6f208ba8cb337845997450486ef061a6f63efd45))
+* **input:** remove serach type ([c61161a](https://github.com/Illustrova/changelog-test/commit/c61161a0c170d0099c54466970ac4555dd44bdef))
+
 ## [0.9.1](https://github.com/Illustrova/changelog-test/compare/v0.9.0...v0.9.1) (2024-03-26)
 
 
