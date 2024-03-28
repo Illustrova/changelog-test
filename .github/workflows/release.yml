@@ -14,15 +14,19 @@ jobs:
     name: Release
     runs-on: ubuntu-latest
     permissions:
-      contents: write 
-      issues: write
-      pull-requests: write
-      id-token: write 
+      contents: write # To be able to publish a GitHub release
+      issues: write # To be able to comment on released issues
+      pull-requests: write # To be able to comment on released pull requests
+    outputs:
+      release-tag: ${{ steps.release.outputs.tag }}
+
+    env:
+      CHANGELOG_FILE: ${{ github.workspace }}/docs/CHANGELOG.md  
     steps:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0
+          fetch-depth: 0 // required by semantic release
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
@@ -30,6 +34,44 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Release
+        id: release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npm run semantic-release -C packages/ui
+          TITLE: '[UI] Automatic Release'
+        run: |
+          npm run semantic-release -C packages/ui
+          echo "tag=${TAG_NAME}" >> "${GITHUB_OUTPUT}"
+      # - name: Create a PR for creating/updating the CHANGELOG file
+      #   env:
+      #     GITHUB_TOKEN:  ${{ secrets.GITHUB_TOKEN }}
+      #     CHANGELOG_BRANCH_NAME: changelog/${{ steps.release.outputs.tag }}
+      #   run: |
+      #     git switch --create "${CHANGELOG_BRANCH_NAME}"
+      #     git commit --message='docs(changelog): release ${{ steps.release.outputs.tag }}' "${CHANGELOG_FILE}"
+      #     git push --set-upstream origin "${CHANGELOG_BRANCH_NAME}"
+
+      #     gh pr create --fill \
+      #       --label 'release' \
+      #       --base ${{ github.ref_name }} \
+      #       --head "${CHANGELOG_BRANCH_NAME}"
+      - name: Create Pull Request
+        id: cpr
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.PAT }}
+          title: ${{ env.TITLE }}
+          commit-message: 'chore(manyui): release ${{ steps.release.outputs.tag }}'
+          author: 'github-actions <41898282+github-actions[bot]@users.noreply.github.com>'
+          labels: automation
+          branch: "${CHANGELOG_BRANCH_NAME}"
+          base: dev
+          body: |
+            Latest release: ${{ steps.release.outputs.tag }} and changelog update
+      - name: Enable Pull Request auto merge
+        if: steps.cpr.outputs.pull-request-operation == 'created'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          pr_number: ${{ steps.cpr.outputs.pull-request-number }}
+        shell: bash
+        run:
+          gh pr merge -R ${{ github.repository }} --merge --auto ${{ env.pr_number }} -b "" -t '⇄ PR-#${{ env.pr_number }} | ${{ env.TITLE }}'
