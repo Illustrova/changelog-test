@@ -62,7 +62,7 @@ jobs:
           commit-message: 'chore(manyui): release ${{ steps.release.outputs.tag }}'
           author: 'github-actions <41898282+github-actions[bot]@users.noreply.github.com>'
           labels: automation
-          branch: changelog/${{ steps.release.outputs.tag }}
+          branch: ui-release
           base: dev
           body: |
             Latest release: ${{ steps.release.outputs.tag }} and changelog update
