@@ -10,7 +10,8 @@
   },
     "husky": {
       "hooks": {
-        "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+        "prepare-commit-msg": "echo $HUSKY_GIT_PARAMS",
+                "commit-msg": "node script.js || commitlint -E HUSKY_GIT_PARAMS"
       }
     },
   "workspaces": [

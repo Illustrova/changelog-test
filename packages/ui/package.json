@@ -21,7 +21,7 @@
   "version": "0.7.45",
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+      "commit-msg": "commitlint"
     }
   },
   "release": {
@@ -39,9 +39,5 @@
         }
       ]
     ]
-  },
-  "commitlint": {
-    "extends": ["@commitlint/config-conventional"]
-    
   }
 }
