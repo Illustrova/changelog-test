@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.4](https://github.com/Illustrova/changelog-test/compare/v0.8.3...v0.8.4) (2024-03-28)
+
+
+### Bug Fixes
+
+* **button:** change color to red ([86c6b52](https://github.com/Illustrova/changelog-test/commit/86c6b52db311be8c867fa1c3b4ca02865e49abc9))
+
 ## [0.8.3](https://github.com/Illustrova/changelog-test/compare/v0.8.2...v0.8.3) (2024-03-28)
 
 
