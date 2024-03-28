@@ -15,6 +15,7 @@ jobs:
     steps:
       - uses: google-github-actions/release-please-action@v4
         with:
+          path: "packages/manyui"
           # this assumes that you have created a personal access token
           # (PAT) and configured it as a GitHub action secret named
           # `MY_RELEASE_PLEASE_TOKEN` (this secret name is not important).
@@ -22,4 +23,4 @@ jobs:
           # this is a built-in strategy in release-please, see "Action Inputs"
           # for more options
           release-type: node
-          skip-github-pull-request: true
+          config-file: release-please-config.json
