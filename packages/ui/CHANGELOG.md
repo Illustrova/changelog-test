@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.0](https://github.com/Illustrova/changelog-test/compare/v0.7.44...v0.8.0) (2024-03-28)
+
+
+### Features
+
+* **input:** add input component ([7063b22](https://github.com/Illustrova/changelog-test/commit/7063b2275ed3b7a457f9b74242d4551a2e7f0cc2))
+* **input:** add input type prop ([82995e4](https://github.com/Illustrova/changelog-test/commit/82995e4da7c63a8f1422d7c93f3896da637b69ba))
+
+
+### Bug Fixes
+
+* action ([bf97ce6](https://github.com/Illustrova/changelog-test/commit/bf97ce6910e7eb432a67c16e74cbcd96e7fadc99))
+* **button:** change color to blue ([55224b1](https://github.com/Illustrova/changelog-test/commit/55224b135db78d2bed1d43b3517c66482eefd165))
+* **button:** change color to blue ([0063f22](https://github.com/Illustrova/changelog-test/commit/0063f22b1b98f45d025b775476538f2fb3a13520))
+* **button:** change color to ligtblue ([7277f0a](https://github.com/Illustrova/changelog-test/commit/7277f0abddda3419b16d04eaada4a8f0724300d1))
+* **button:** change color to red ([86c6b52](https://github.com/Illustrova/changelog-test/commit/86c6b52db311be8c867fa1c3b4ca02865e49abc9))
+* **input:** add input type ([de99180](https://github.com/Illustrova/changelog-test/commit/de9918028ef928f7d331dde8d734957bf6986442))
+* **input:** allow only certain types of input ([f890ee3](https://github.com/Illustrova/changelog-test/commit/f890ee34929f546f52826a5cdaae27d7583be851))
+* **input:** disallow email and password types ([2802e0d](https://github.com/Illustrova/changelog-test/commit/2802e0d3f670f02b2b7cb6f1839a4921f2a01fcd))
+* **input:** remove serach type ([c61161a](https://github.com/Illustrova/changelog-test/commit/c61161a0c170d0099c54466970ac4555dd44bdef))
+
 ## [0.9.1](https://github.com/Illustrova/changelog-test/compare/v0.9.0...v0.9.1) (2024-03-26)
 
 

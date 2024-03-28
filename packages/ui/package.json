@@ -18,12 +18,14 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
-  "version": "0.7.45",
+  "version": "0.8.0",
   "release": {
     "branches": [
       "semantic-release"
     ],
-    "commitPaths": ["packages/ui"],
+    "commitPaths": [
+      "packages/ui"
+    ],
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
