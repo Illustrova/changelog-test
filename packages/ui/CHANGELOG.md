@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.1](https://github.com/Illustrova/changelog-test/compare/v0.8.0...v0.8.1) (2024-03-28)
+
+
+### Bug Fixes
+
+* action ([bf97ce6](https://github.com/Illustrova/changelog-test/commit/bf97ce6910e7eb432a67c16e74cbcd96e7fadc99))
+* **button:** change color to blue ([55224b1](https://github.com/Illustrova/changelog-test/commit/55224b135db78d2bed1d43b3517c66482eefd165))
+* **button:** change color to ligtblue ([7277f0a](https://github.com/Illustrova/changelog-test/commit/7277f0abddda3419b16d04eaada4a8f0724300d1))
+* **button:** change color to red ([86c6b52](https://github.com/Illustrova/changelog-test/commit/86c6b52db311be8c867fa1c3b4ca02865e49abc9))
+* **input:** remove serach type ([c61161a](https://github.com/Illustrova/changelog-test/commit/c61161a0c170d0099c54466970ac4555dd44bdef))
+
 ## [0.8.0](https://github.com/Illustrova/changelog-test/compare/v0.7.44...v0.8.0) (2024-03-28)
 
 
